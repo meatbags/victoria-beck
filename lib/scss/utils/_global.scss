@@ -1,0 +1,33 @@
+div, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //outline: 1px solid $colourDev;
+}
+
+body {
+  font-family: $fontStack;
+  font-size: $fontSize;
+  color: $colourPrimary;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+
+  @media screen and (max-width: $breakTablet) {
+    font-size: $fontSizeTablet;
+  }
+
+  @media screen and (max-width: $breakMobile) {
+    font-size: $fontSizeMobile;
+    letter-spacing: $letterSpacingSmall;
+  }
+}
+
+em, .em {
+  font-family: $fontStackMiller;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: lighter;
+}

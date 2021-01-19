@@ -1,0 +1,51 @@
+// colours
+
+$black: #000;
+$white: #faf4e6;
+$grey: #f8f1e1;
+$colourPrimary: #59a3e7;
+$colourBackground: #4a90e2;
+$colourSecondary: $grey;
+$colourDev: #eee;
+
+// font
+
+$fontStack: Arial, sans-serif;
+$fontStackMiller: Miller, sans-serif;
+$fontSize: 27px;
+$fontSizeTablet: 25px;
+$fontSizeMobile: 11px;
+$letterSpacing: 5px;
+$fontSizeSmall: 55%;
+$lineHeight: 1.2;
+$letterSpacingSmall: 2px;
+$lineHeightSmall: 1.05;
+
+// breakpoints
+
+$breakTablet: 1024px;
+$breakMobile: 767px;
+$breakTiny: 500px;
+
+// space
+
+$space: 15px;
+$spaceMedium: $space * 2;
+$spaceMidLarge: $space * 4;
+$spaceLarge: $space * 6;
+$spaceHuge: $space * 9;
+$spaceLargeTablet: $spaceLarge / 2;
+$spaceMobile: 10px;
+$spaceLargeMobile: $spaceMobile;
+
+// transition
+
+$speed: 0.5s;
+$speedNormal: $speed;
+$speedFast: $speed * 0.5;
+$speedSlow: $speed * 2;
+
+// height
+
+$indexNav: 100;
+$indexSliderControls: 90;

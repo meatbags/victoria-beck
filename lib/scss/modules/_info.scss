@@ -1,0 +1,41 @@
+
+.info {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 100vh;
+  //min-height: 100vh;
+  background: $colourBackground;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .info__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .credit {
+      padding: $space;
+
+      .role {
+        @extend .text-centre;
+        text-transform: uppercase;
+      }
+
+      .person {
+        @extend .em, .small, .text-centre;
+      }
+
+      @media screen and (max-width: $breakMobile) {
+        .role {
+          font-size: 120%;
+        }
+        .person {
+          font-size: 100%;
+        }
+      }
+    }
+  }
+}

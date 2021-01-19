@@ -1,0 +1,101 @@
+.padding {
+  padding-left: $spaceLarge;
+  padding-right: $spaceLarge;
+
+  @media screen and (max-width: $breakTablet) {
+    padding-left: $spaceLargeTablet;
+    padding-right: $spaceLargeTablet;
+  }
+
+  @media screen and (max-width: $breakMobile) {
+    padding-left: $spaceLargeMobile;
+    padding-right: $spaceLargeMobile;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.hover {
+  transition: opacity $speed;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.cascade-fade {
+  opacity: 0;
+}
+
+.cascade-rise {
+  transform: translateY(60px);
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+.scrollto {
+  @extend .selectable;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.small {
+  font-size: $fontSizeSmall;
+  line-height: $lineHeightSmall;
+  letter-spacing: $letterSpacingSmall;
+}
+
+.inline {
+  display: inline;
+}
+
+.tablet-hide {
+  @media screen and (max-width: $breakTablet) {
+    display: none;
+  }
+}
+
+.tablet-show {
+  display: none;
+  @media screen and (max-width: $breakTablet) {
+    display: block;
+  }
+}
+
+
+.mobile-hide {
+  @media screen and (max-width: $breakMobile) {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+  @media screen and (max-width: $breakMobile) {
+    display: block;
+  }
+}

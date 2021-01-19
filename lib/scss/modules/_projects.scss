@@ -1,0 +1,120 @@
+
+.projects {
+  @extend .padding;
+
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 50vh;
+  background: $grey;
+  padding-top: $spaceLarge;
+  z-index: 10;
+
+  @media screen and (max-width: $breakMobile) {
+    padding-top: $spaceLarge / 2;
+    margin-top: 40vh;
+  }
+
+  .projects__inner {
+    width: 100%;
+
+    .projects__inner__columns {
+      display: flex;
+      width: 100%;
+
+      &.tablet-hide {
+        @media screen and (max-width: $breakTablet) {
+          display: none;
+        }
+      }
+
+      &.tablet-show {
+        display: none;
+        @media screen and (max-width: $breakTablet) {
+          display: flex;
+        }
+      }
+    }
+
+    .project-column {
+      .item {
+        @extend .selectable;
+
+        width: 100%;
+        padding-bottom: $spaceMedium;
+        transition: $speedSlow;
+
+        @media screen and (max-width: $breakMobile) {
+          padding-bottom: $spaceMobile;
+        }
+
+        img {
+          filter: saturate(0%);
+          width: 100%;
+          transition: $speed;
+        }
+
+        &.active {
+          img {
+            filter: saturate(100%);
+          }
+        }
+
+        &:hover {
+          img {
+            filter: saturate(100%);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .col-half {
+      &:nth-child(1) {
+        padding-right: $spaceMedium;
+      }
+
+      &:nth-child(2) {
+        padding-left: $spaceMedium;
+      }
+    }
+
+    @media screen and (max-width: $breakTablet) {
+      .col-half {
+        &:nth-child(1) {
+          padding-right: $spaceLargeTablet / 2;
+        }
+
+        &:nth-child(2) {
+          padding-left: $spaceLargeTablet / 2;
+        }
+      }
+    }
+
+    @media screen and (max-width: $breakMobile) {
+      .col-half {
+        &:nth-child(1) {
+          padding-right: $spaceLargeMobile / 2;
+        }
+
+        &:nth-child(2) {
+          padding-left: $spaceLargeMobile / 2;
+        }
+      }
+    }
+
+    .col-third {
+      &:nth-child(1) {
+        padding-right: $spaceMedium;
+      }
+
+      &:nth-child(2) {
+        padding-left: $space;
+        padding-right: $space;
+      }
+
+      &:nth-child(3) {
+        padding-left: $spaceMedium;
+      }
+    }
+  }
+}

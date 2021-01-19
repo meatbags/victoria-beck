@@ -1,0 +1,15 @@
+// set up
+@import 'utils/vars';
+@import 'utils/fonts';
+@import 'utils/global';
+@import 'utils/utils';
+@import 'utils/scroll';
+@import 'utils/slick';
+
+// layout
+@import 'modules/nav';
+@import 'modules/grid';
+@import 'modules/projects';
+@import 'modules/info';
+@import 'modules/slider';
+@import 'modules/footer';

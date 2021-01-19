@@ -1,0 +1,49 @@
+.footer {
+  @extend .noselect, .padding;
+
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  padding-top: $space;
+  padding-bottom: $spaceMedium;
+
+  &.raised {
+    bottom: 50vh;
+  }
+
+  @media screen and (max-width: $breakMobile) {
+    &.raised {
+      bottom: 60vh;
+    }
+  }
+
+  &.mobile-hide {
+    @extend .mobile-hide;
+  }
+
+  &.mobile-show {
+    @extend .mobile-show;
+  }
+}
+
+.footer__mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .small {
+    font-size: 80%;
+  }
+
+  @media screen and (max-width: $breakMobile) {
+    display: flex;
+  }
+}
